@@ -11,7 +11,7 @@ export default function Dashboard() {
         <p className="text-gray-500">Welcome to Loudable. Turn customer calls into proof.</p>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-2">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Total Reviews Generated</CardTitle>
@@ -32,19 +32,9 @@ export default function Dashboard() {
             <p className="text-xs text-gray-500">+1 from last week</p>
           </CardContent>
         </Card>
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Testimonials Sorted</CardTitle>
-            <BarChart className="h-4 w-4 text-blue-600" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">24</div>
-            <p className="text-xs text-gray-500">+5 from last week</p>
-          </CardContent>
-        </Card>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
         <Card>
           <CardHeader>
             <CardTitle>G2 Review Generator</CardTitle>
@@ -69,20 +59,6 @@ export default function Dashboard() {
               <Button className="w-full">
                 <FileText className="mr-2 h-4 w-4" />
                 Build Case Studies
-              </Button>
-            </Link>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardHeader>
-            <CardTitle>Testimonial Sorter</CardTitle>
-            <CardDescription>Organize and filter customer testimonials by various criteria.</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <Link href="/dashboard/testimonial-sorter">
-              <Button className="w-full">
-                <BarChart className="mr-2 h-4 w-4" />
-                Sort Testimonials
               </Button>
             </Link>
           </CardContent>

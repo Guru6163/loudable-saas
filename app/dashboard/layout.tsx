@@ -47,11 +47,6 @@ export default function DashboardLayout({
       href: "/dashboard/case-study-builder",
       icon: FileText,
     },
-    {
-      name: "Testimonial Sorter",
-      href: "/dashboard/testimonial-sorter",
-      icon: BarChart,
-    },
   ]
 
   return (
@@ -127,37 +122,7 @@ export default function DashboardLayout({
           </Sheet>
 
           {/* User Menu */}
-          <div className="flex items-center gap-4">
-            <Button variant="outline" size="sm" className="hidden md:flex">
-              <Settings className="mr-2 h-4 w-4" />
-              Settings
-            </Button>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Avatar className="h-8 w-8 cursor-pointer">
-                  <AvatarImage src="/placeholder.svg?height=32&width=32" alt="User" />
-                  <AvatarFallback>JD</AvatarFallback>
-                </Avatar>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuLabel>My Account</DropdownMenuLabel>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem>
-                  <User className="mr-2 h-4 w-4" />
-                  Profile
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Settings className="mr-2 h-4 w-4" />
-                  Settings
-                </DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem>
-                  <LogOut className="mr-2 h-4 w-4" />
-                  Log out
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
+        
         </div>
       </header>
 

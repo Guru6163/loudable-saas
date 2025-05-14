@@ -129,27 +129,6 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* Trusted By Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter">Trusted By</h2>
-                <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Join hundreds of companies using Loudable to amplify their customer success stories.
-                </p>
-              </div>
-              <div className="flex flex-wrap items-center justify-center gap-8 py-6 grayscale">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <div key={i} className="flex h-12 w-32 items-center justify-center rounded-lg bg-gray-100">
-                    <span className="text-sm font-medium text-gray-500">LOGO {i}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* CTA Section */}
         <section className="w-full bg-blue-600 py-12 md:py-24 lg:py-32">
           <div className="container mx-auto grid items-center justify-center gap-4 px-4 text-center md:px-6">
@@ -171,7 +150,7 @@ export default function LandingPage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full min-[400px]:w-auto border-white text-white hover:bg-white/10"
+                  className="w-full min-[400px]:w-auto border-white text-black hover:bg-white/10"
                 >
                   Book a Demo
                 </Button>
@@ -183,28 +162,9 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="border-t bg-white">
-        <div className="container mx-auto flex flex-col gap-6 py-8 px-4 md:flex-row md:items-center md:justify-between md:px-6">
-          <div className="flex flex-col gap-2">
-            <div className="flex items-center gap-2">
-              <Star className="h-5 w-5 text-blue-600" />
-              <span className="text-lg font-bold">Loudable</span>
-            </div>
-            <p className="text-sm text-gray-500">
-              Turn customer calls into proof. © {new Date().getFullYear()} Loudable Inc.
-            </p>
+        <div className="text-center p-6">
+          Developed By GuruF
           </div>
-          <nav className="flex flex-wrap gap-4 md:gap-6">
-            <Link href="#" className="text-sm hover:underline">
-              Privacy
-            </Link>
-            <Link href="#" className="text-sm hover:underline">
-              Terms
-            </Link>
-            <Link href="#" className="text-sm hover:underline">
-              Contact
-            </Link>
-          </nav>
-        </div>
       </footer>
     </div>
   )
